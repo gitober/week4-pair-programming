@@ -17,11 +17,15 @@ function Tours() {
         <Title title="featured" span="tours" />
         <div className="section-center featured-center">
           {toursData.map((tour) => (
-            <Tour key={tour.id} {...tour}>
-              <button onClick={() => removeTour(tour.id)}>
+            <div className="tour" key={tour.id}>
+              <Tour {...tour} />
+              <button
+                onClick={() => removeTour(tour.id)}
+                className="not-interested-button"
+              >
                 Not Interested
               </button>
-            </Tour>
+            </div>
           ))}
         </div>
       </section>

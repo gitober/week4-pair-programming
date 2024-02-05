@@ -34,7 +34,7 @@
 }
 
 .registration-container button {
-  background-color: #007bff;
+  background-color: turquoise;
   color: #fff;
   padding: 10px;
   border: none;
@@ -43,5 +43,5 @@
 }
 
 .registration-container button:hover {
-  background-color: #0056b3;
+  background-color: thistle;
 }

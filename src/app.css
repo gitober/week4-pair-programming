@@ -497,6 +497,7 @@ Navbar
   color: var(--clr-grey-1);
   cursor: pointer;
   font-size: 1rem;
+  margin: 10px;
 }
 .nav-link:hover {
   color: var(--clr-primary-1);
@@ -508,10 +509,12 @@ Navbar
   height: 0;
   overflow: hidden;
   transition: var(--transition);
+  padding: 2px;
 }
 .show-links {
   height: 280px;
 }
+
 /* nav at bigger screen size */
 @media screen and (min-width: 992px) {
   /* hide nav toggle button */
@@ -568,4 +571,19 @@ min-height:calc(100vh - 62px);
   margin: 4rem;
   font-size: 1.5rem;
   text-transform: uppercase;
+}
+.not-interested-button {
+  background-color: turquoise;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px; /* Adjust as needed */
+  display: inline-block; /* Ensures the button takes only the necessary width */
+  transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.not-interested-button:hover {
+  background-color: thistle; /* Darker shade on hover */
 }
