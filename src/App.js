@@ -9,17 +9,21 @@ import Tours from "./components/Tours";
 import NotFound from "./components/NotFound";
 import Registration from "./components/Registration"; // Import the Registration component
 import "./app.css";
+import "./components/Registration.css"; // Import the Registration component's CSS
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/tours" element={<Tours />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/registration" element={<Registration />} />
-        <Route path="*" element={<NotFound />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="home" element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="services" element={<Services />} />
+          <Route path="tours" element={<Tours />} />
+          <Route path="registration" element={<Registration />} />
+          <Route path="*" element={<NotFound />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   );
